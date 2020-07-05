@@ -147,9 +147,9 @@ int main(int argc, char* argv[])
             printf("Couldn't find codec.\n");
             return -1;
         }
-         printf("Codec found with name %d(%s)\n", pCodec->id, pCodec->long_name);
     }
 
+    printf("Codec found with name %d(%s)\n", pCodec->id, pCodec->long_name);
     if (avcodec_open2(pCodecCtx, pCodec, NULL) < 0)
     {
          printf("Couldn't open codec.\n");
