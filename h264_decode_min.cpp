@@ -108,7 +108,7 @@ int main(int argc, char* argv[])
     AVPacket *pPacket = NULL;
     int ret = -1;
     int frame_cnt = 0;
-    const char* filepath = "sample_720p-2.h264";
+    const char* filepath = "sample_720p.h264";
 
     //分配空间
     pFormatCtx = avformat_alloc_context();
